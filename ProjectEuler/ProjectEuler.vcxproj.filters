@@ -36,6 +36,9 @@
     <ClInclude Include="P2Solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="P3Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -51,6 +54,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="P2Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="P3Solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
