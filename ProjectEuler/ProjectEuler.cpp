@@ -12,6 +12,7 @@ void gen_solution_list(std::vector<PESolution*>& solutions) {
 	solutions.emplace_back(new P1Solution());
 	solutions.emplace_back(new P2Solution());
 	solutions.emplace_back(new P3Solution());
+	solutions.emplace_back(new P4Solution());
 	return;
 }
 
