@@ -149,6 +149,7 @@
     <ClInclude Include="P2Solution.h" />
     <ClInclude Include="P3Solution.h" />
     <ClInclude Include="P4Solution.h" />
+    <ClInclude Include="P5Solution.h" />
     <ClInclude Include="PESolution.h" />
     <ClInclude Include="PESolutionList.h" />
     <ClInclude Include="stdafx.h" />
@@ -159,6 +160,7 @@
     <ClCompile Include="P2Solution.cpp" />
     <ClCompile Include="P3Solution.cpp" />
     <ClCompile Include="P4Solution.cpp" />
+    <ClCompile Include="P5Solution.cpp" />
     <ClCompile Include="PESolution.cpp" />
     <ClCompile Include="ProjectEuler.cpp" />
     <ClCompile Include="stdafx.cpp">
