@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include "PEUtil.h"
 class PESolution
 {
 protected:

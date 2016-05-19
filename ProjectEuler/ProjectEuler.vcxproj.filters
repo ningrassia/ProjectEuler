@@ -30,9 +30,6 @@
     <ClInclude Include="P1Solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PESolutionList.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="P2Solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -43,6 +40,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="P5Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="P6Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PEUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PESolutionList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="P7Solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -69,6 +78,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="P5Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="P6Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PEUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="P7Solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

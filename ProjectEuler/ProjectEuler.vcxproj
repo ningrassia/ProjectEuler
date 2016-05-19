@@ -150,8 +150,12 @@
     <ClInclude Include="P3Solution.h" />
     <ClInclude Include="P4Solution.h" />
     <ClInclude Include="P5Solution.h" />
+    <ClInclude Include="P6Solution.h" />
+    <ClInclude Include="P7Solution.h" />
+    <ClInclude Include="P8Solution.h" />
     <ClInclude Include="PESolution.h" />
     <ClInclude Include="PESolutionList.h" />
+    <ClInclude Include="PEUtil.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -161,7 +165,11 @@
     <ClCompile Include="P3Solution.cpp" />
     <ClCompile Include="P4Solution.cpp" />
     <ClCompile Include="P5Solution.cpp" />
+    <ClCompile Include="P6Solution.cpp" />
+    <ClCompile Include="P7Solution.cpp" />
+    <ClCompile Include="P8Solution.cpp" />
     <ClCompile Include="PESolution.cpp" />
+    <ClCompile Include="PEUtil.cpp" />
     <ClCompile Include="ProjectEuler.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

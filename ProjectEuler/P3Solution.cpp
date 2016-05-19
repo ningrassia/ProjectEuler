@@ -1,17 +1,6 @@
 #include "stdafx.h"
 #include "P3Solution.h"
 #include <sstream>
-bool isPrime(long long test) {
-	//skip 2 and even numbers
-	if (!(test % 2))
-		return false;
-
-	for (long long i = 3; i < int(sqrt(test)); i = i + 2) {
-		if (!(test % i))
-			return false;
-	}
-	return true;
-}
 
 std::string P3Solution::solve() {
 	const long long number = 600851475143;
