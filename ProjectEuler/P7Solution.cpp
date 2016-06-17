@@ -6,22 +6,14 @@
 std::string P7Solution::solve()
 {
 	std::stringstream ans;
-	int count = 0;
-	int test = 2;
-	while (count <= 10001)
-	{
-		if (isPrime(test))
-		{
-			count++;
-			if(count < 10001)
-				test++;
-		}
-		else
-		{
+	int count;
+	long long test = 1;
+	for (count = 1; count < 10001; count++) {
+		test++;
+		while (!isPrime(test)) {
 			test++;
 		}
 	}
-
 	ans << test;
 	return ans.str();
 }

@@ -4,23 +4,21 @@
 
 std::string P3Solution::solve() {
 	const long long number = 600851475143;
-	long long test = int(sqrt(number)) + 1; //should be odd (yes this is hacky but w/e
-	bool complete = false;
+	long long test = long long(sqrt(number)) + 1; //should be odd (yes this is hacky but w/e)
+	long long result = 0;
 	std::stringstream answer;
 	
-	while (!complete && (test > 2)) {
-		if (!(number % test))
-			if (isPrime(test))
-				complete = true;
-		test = test - 2; //skip even numbers - they're definitely not prime!
+	for (long long i = 3; i < test; i += 2) {
+		if (isPrime(i) && (number%i == 0))
+			result = i;
 	}
-	answer << test;
+	answer << result;
 	return answer.str();
 }
 
 P3Solution::P3Solution()
 {
-	init("P3", "bla");
+	init("Largest prime factor", "bla");
 }
 
 

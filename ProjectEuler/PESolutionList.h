@@ -6,3 +6,4 @@
 #include "P5Solution.h"
 #include "P6Solution.h"
 #include "P7Solution.h"
+#include "P8Solution.h"

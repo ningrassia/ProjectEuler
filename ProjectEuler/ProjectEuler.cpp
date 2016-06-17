@@ -6,6 +6,7 @@
 #include "PESolutionList.h"
 #include <iostream>
 #include <vector>
+#include <windows.h>
 
 void gen_solution_list(std::vector<PESolution*>& solutions) {
 	//add solutions to list here.
@@ -16,6 +17,7 @@ void gen_solution_list(std::vector<PESolution*>& solutions) {
 	solutions.emplace_back(new P5Solution());
 	solutions.emplace_back(new P6Solution());
 	solutions.emplace_back(new P7Solution());
+	solutions.emplace_back(new P8Solution());
 	return;
 }
 
@@ -27,25 +29,27 @@ void free_solutions(std::vector<PESolution*>& solutions) {
 
 int main()
 {
-	int selection;
+	int selection = 1;
 
 	//generate vector of solutions
 	std::vector<PESolution*> solutions;
 	gen_solution_list(solutions);
 
 	std::cout << "Welcome to Project Euler solutions - which solution do you want to run?" << std::endl;
-	//for each Solution,
-	int i = 0;
+	std::cout << "0: Quit" << std::endl;
+	int i = 1;
 	for each (PESolution* var in solutions)
 	{
 		std::cout << i++ << ": " << var->getName() << std::endl;
 	}
 
-	std::cin >> selection;
+	while (1) {
+		std::cin >> selection;
+		if (selection == 0)
+			break;
 
-	std::cout << "The solution is " << solutions[selection]->solve() << std::endl;
-
+		std::cout << "The solution is " << solutions[selection - 1]->solve() << std::endl;
+		std::cout << "Which solution do you want to run?" << std::endl;
+	}
 	free_solutions(solutions);
-
-	while (1); //force user to quit
 }

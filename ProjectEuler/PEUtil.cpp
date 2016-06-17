@@ -34,13 +34,13 @@ bool isPalindrome(int num)
 	return true;
 }
 
-
+//could do this with DYNAMIC PROGRAMMING, should do that later.
 bool isPrime(long long test) {
 	//skip 2 and even numbers
 	if (!(test % 2))
 		return false;
 
-	for (long long i = 3; i < int(sqrt(test)); i = i + 2) {
+	for (long long i = 3; i < long long(sqrt(test) + 1); i = i + 2) {
 		if (!(test % i))
 			return false;
 	}
